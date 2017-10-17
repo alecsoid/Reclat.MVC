@@ -1,0 +1,63 @@
+﻿@using Reclat.MVC.Models
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row center-block" style="width: 920px;">
+    <div style="background-image: url(/Content/Images/background.png); height: 523px; background-position-x: 25%" class="no-border col-sm-3">
+        @Html.Partial("RecyclingItem", false)
+    </div>
+    <div class="col-sm-9 break-word">
+        <p class="partial-font">Sadarbībā ar lielākajiem pārstrādes uzņēmumiem&nbsp;nodrošināt normatīvajos aktos noteikto prasību izpildi par atkritumu apsaimniekošanu t.i.&nbsp;pieņemšanu, šķirošanu, apstrādi, atkārtotu izmantošanu, pārstrādi, reģenerāciju un apglabāšanu</p>
+        <p class="partial-font">&nbsp;</p>
+        <p class="partial-font">Pārstrādājot nolietotas elektropreces rodas:</p>
+        <p class="partial-font">&nbsp;</p>
+        <p class="partial-font">&nbsp;- Melnā&nbsp;metāla lūžņi</p>
+        <p class="partial-font">- Plastmasas un gumijas atkritumi</p>
+        <p class="partial-font">- Krāsaino&nbsp;metalu&nbsp;lūžņi (Al, Cu, Pb, Ni u.c.)</p>
+        <p class="partial-font">- Plates</p>
+        <p class="partial-font">- Stikls</p>
+        <p class="partial-font">- Baterijas, akumulātori</p>
+        <div class="row" style="padding-top: 20px">
+            <div class="col-sm-4">
+                @Html.Partial("Picture", new PictureModel { Url = "elektropreces.png", Text = "Elektropreces" })
+            </div>
+            <div class="col-sm-4">
+                @Html.Partial("Picture", new PictureModel { Url = "waste.png", Text = "Waste" })
+            </div>
+            <div class="col-sm-4">
+                @Html.Partial("Picture", new PictureModel { Url = "lampas.png", Text = "Lampas" })
+            </div>
+        </div>
+        <div class="row" style="padding-top: 10px">
+            <div class="col-sm-4">
+                @Html.Partial("Picture", new PictureModel { Url = "asb_plastmasa.png", Text = "ABS plastmasa" })
+            </div>
+            <div class="col-sm-4">
+                @Html.Partial("Picture", new PictureModel { Url = "plates.png", Text = "Plates" })
+            </div>
+            <div class="col-sm-4">
+                @Html.Partial("Picture", new PictureModel { Url = "plates2.png", Text = "Plates" })
+            </div>
+        </div>
+        <div class="row" style="padding-top: 10px">
+            <div class="col-sm-4">
+                @Html.Partial("Picture", new PictureModel { Url = "pvc.png", Text = "PVC" })
+            </div>
+            <div class="col-sm-4">
+                @Html.Partial("Picture", new PictureModel { Url = "altkritumi.png", Text = "Alkritumi" })
+            </div>
+            <div class="col-sm-4">
+                @Html.Partial("Picture", new PictureModel { Url = "akumulatori.png", Text = "Akumulatori" })
+            </div>
+        </div>
+        <div class="row" style="padding-top: 10px">
+            <div class="col-sm-4">
+                @Html.Partial("Picture", new PictureModel { Url = "monitori.png", Text = "Monitori" })
+            </div>
+            <div class="col-sm-4">
+                @Html.Partial("Picture", new PictureModel { Url = "tehnika.png", Text = "Sadzives tehnika" })
+            </div>
+        </div>
+    </div>
+</div>

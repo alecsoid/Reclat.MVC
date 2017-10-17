@@ -1,0 +1,85 @@
+﻿@using Reclat.MVC.Controllers
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disposal service</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="container" style="height: 120px;">
+        <div class="row">
+            <div class="col-sm-6">
+                <a href="@Url.Action("Index", "Home")" class="link-wo_underline">
+                    <div style="float: left">
+                        <img src="../../Content/Images/reclat_logo.png" />
+                    </div>
+                    <div class="text-align-right">
+                        <div style="font: normal normal bold 33px 'open sans', sans-serif; color: #585551;">
+                            <span>Utilizācijas serviss</span>
+                        </div>
+                        <div style="font: normal normal normal 15px 'open sans', sans-serif; color: #585551;">
+                            <span>Nolietotu elektropreču utilizācijas pakalpojumi uzņēmumiem</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 menu-item">
+                <div class="col-sm-5" style="float: right;">
+                    <div style="float: left; text-align: center" class="col-sm-6 menu-container">
+                        <div>
+                            <a href="@Url.Action("Disposal", "Home")" class="link-wo_underline">
+                                <span>Utilizācija</span>
+                            </a>
+                        </div>
+                        <div class="child-items-container" style="width: 75%">
+                            <div style="border-bottom: 1px solid black">
+                                <a href="@Url.Action("Recycling", "Home")" class="link-wo_underline">
+                                    <span>Pārstrade</span>
+                                </a>
+                            </div>
+                            <div style="border-bottom: 1px solid black">
+                                <a href="@Url.Action("BuyIt", "Home")" class="link-wo_underline">
+                                    <span>Ieperkam</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="@Url.Action("Helpful", "Home")" class="link-wo_underline">
+                                    <span>Nodērigi</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="float: right; border-left: 1px solid black;" class="col-sm-6">
+                        <a href="@Url.Action("Kontakti", "Home")" class="link-wo_underline">
+                            <span>Kontakti</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid body-content">
+        @RenderBody()
+    </div>
+    <footer>
+        <div class="row center-block" style="width: 920px; ">
+            <div class="col-sm-9">
+                <a href="https://www.facebook.com/RecycleLatgaleSia/" target="_blank">
+                    <img alt="Wix Facebook page" data-type="image" style="width: 30px; height: 30px;" src="~/Content/Images/facebook.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <span style="float: right">&copy; 2017 - www.reclat.lv</span>
+            </div>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

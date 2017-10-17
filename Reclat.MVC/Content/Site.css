@@ -1,0 +1,248 @@
+﻿body {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f7f7f7;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+a.link-wo_underline {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+/*#region Menu */
+.menu-item span {
+    font: normal normal normal 14px/1.1em enriqueta,serif;
+    color: #848079;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.menu-item span:hover {
+    color: #8FD169;
+}
+
+/* Hover child menu */
+div.menu-container {
+    position: relative;
+}
+
+div.child-items-container {
+    max-height: 0;
+    overflow: hidden;
+    text-align: center;
+    transition: 200ms ease-out;
+    position: absolute;
+    top: 30px;
+}
+
+div.menu-container:hover div.child-items-container {
+    max-height: 500px;
+    transition: 500ms ease-out;
+}
+/*#endregion Menu */
+
+.vertical-centered * {
+    display: flex;
+    align-items: center;
+}
+
+.main-menu-button {
+    transition: background-color 300ms linear;
+    background-color: rgba(69, 186, 1, 1);
+    height: 72px;
+    margin-top: 380px;
+}
+
+.main-menu-button:hover {
+    background-color: rgba(8, 118, 1, 1);
+    -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+.main-menu-text {
+    font: normal normal normal 25px/1.1em 'open sans',sans-serif;
+    transition: color 0.4s ease 0s;
+    color: #FFFFFF;
+    /*display: inline-block;*/
+    margin: calc(-1 * 0px) 0px 0;
+    position: relative;
+    white-space: nowrap;
+    float: right;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.partial-item-div {
+    height: 100%;
+    border-right: 11px solid #f7f7f7;
+}
+
+.menu-image {
+    height: 100%;
+}
+
+.menu-image svg {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 22px;
+    margin: auto;
+    fill: #FFFFFF;
+    fill-opacity: 0;
+    stroke: rgba(255, 255, 255, 1);
+    stroke-width: 6px;
+}
+
+.disabled-link {
+    pointer-events: none;
+    cursor: default;
+}
+
+.no-border {
+    border: none;
+}
+
+.partial-font {
+    /*font: normal normal normal 15px/1.3em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;*/
+    font: normal normal normal 15px/1.3em 'open sans',sans-serif;
+    color: #848079;
+}
+
+.break-word {
+    word-wrap: break-word;
+    padding-left: 50px;
+}
+
+.break-word p {
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+p {
+    -webkit-margin-after: 0px;
+}
+
+.title-font {
+    font: normal normal normal 23px/1.2em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+    color: #585551;
+}
+
+.buyit-image {
+    width: 142px;
+    height: 142px;
+    object-fit: cover;
+}
+
+.buyit-font-title {
+    font: normal normal normal 25px/1.3em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+    color: #848079;
+}
+
+.buyit-font-content {
+    font: normal normal normal 14px/1.3em enriqueta,serif;
+    color: #848079;
+}
+
+.buyit-font-price {
+    font: normal normal normal 11px/1.3em 'Open Sans',sans-serif;
+    color: #848079;
+}
+
+.buyit-margin p {
+    margin-top: 10px;
+}
+
+.image-container {
+    position: relative;
+    width: 110%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.image-container:hover .image {
+    opacity: 0.2;
+}
+
+.image-container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.font-h2 {
+    font: normal normal normal 25px/1.1em 'open sans',sans-serif;
+    color: #585551;
+}
+
+.static-text-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.static-text-centered {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #45ba01;
+    height: 88px;
+    padding-top: 15px;
+}
+.static-text {
+    font: normal normal normal 26px/1.2em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+}
+
+.green-font {
+    font: normal normal normal 15px/1.3em enriqueta,serif;
+    color: #45ba01;
+}

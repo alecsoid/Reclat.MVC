@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row center-block" style="width: 920px; height: 523px; background-image: url('/Content/Images/background.png');">
+    <div class="col-sm-3" style="height: 100%">
+        @Html.Partial("DisposalItem", true)
+    </div>
+    <div class="col-sm-3" style="height: 100%">
+        @Html.Partial("RecyclingItem", true)
+    </div>
+    <div class="col-sm-3" style="height: 100%">
+        @Html.Partial("BuyItItem", true)
+    </div>
+    <div class="col-sm-3" style="height: 100%">
+        @Html.Partial("HelpfulItem", true)
+    </div>
+</div>
