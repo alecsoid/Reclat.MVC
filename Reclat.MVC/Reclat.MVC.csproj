@@ -141,6 +141,10 @@
     <Content Include="Content\Images\elektropreces.png" />
     <Content Include="Content\Images\facebook.png" />
     <Content Include="Content\Images\gallery.css" />
+    <Content Include="Content\Images\image_part_001.png" />
+    <Content Include="Content\Images\image_part_002.png" />
+    <Content Include="Content\Images\image_part_003.png" />
+    <Content Include="Content\Images\image_part_004.png" />
     <Content Include="Content\Images\katalizator.png" />
     <Content Include="Content\Images\kontakti.png" />
     <Content Include="Content\Images\lampas.png" />

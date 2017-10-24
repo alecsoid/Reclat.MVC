@@ -1,15 +1,26 @@
 ﻿body {
     padding-top: 30px;
     padding-bottom: 20px;
+    /*min-width: 980px;*/
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: #f7f7f7;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /*background-color: #f7f7f7;*/
+}
+
+.navbar-default {
+    background: none;
+    border: none;
+    height: 120px;
+}
+
+.navbar-brand {
+    padding: 0px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -40,9 +51,9 @@ a.link-wo_underline {
     cursor: pointer;
 }
 
-.menu-item span:hover {
-    color: #8FD169;
-}
+    .menu-item span:hover {
+        color: #8FD169;
+    }
 
 /* Hover child menu */
 div.menu-container {
@@ -76,12 +87,12 @@ div.menu-container:hover div.child-items-container {
     margin-top: 380px;
 }
 
-.main-menu-button:hover {
-    background-color: rgba(8, 118, 1, 1);
-    -webkit-transition: background-color 300ms linear;
-    -ms-transition: background-color 300ms linear;
-    transition: background-color 300ms linear;
-}
+    .main-menu-button:hover {
+        background-color: rgba(8, 118, 1, 1);
+        -webkit-transition: background-color 300ms linear;
+        -ms-transition: background-color 300ms linear;
+        transition: background-color 300ms linear;
+    }
 
 .main-menu-text {
     font: normal normal normal 25px/1.1em 'open sans',sans-serif;
@@ -97,29 +108,42 @@ div.menu-container:hover div.child-items-container {
     height: 100%;
 }
 
+.background-class {
+    background: #f7f7f7;
+}
+
 .partial-item-div {
     height: 100%;
     border-right: 11px solid #f7f7f7;
+    border-bottom: 11px solid #f7f7f7;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+@media (max-width: 768px) {
+    .partial-item-div {
+        margin-bottom: 10px;
+    }
 }
 
 .menu-image {
     height: 100%;
 }
 
-.menu-image svg {
-    width: 55px;
-    height: 55px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 22px;
-    margin: auto;
-    fill: #FFFFFF;
-    fill-opacity: 0;
-    stroke: rgba(255, 255, 255, 1);
-    stroke-width: 6px;
-}
+    .menu-image svg {
+        width: 55px;
+        height: 55px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 22px;
+        margin: auto;
+        fill: #FFFFFF;
+        fill-opacity: 0;
+        stroke: rgba(255, 255, 255, 1);
+        stroke-width: 6px;
+    }
 
 .disabled-link {
     pointer-events: none;
@@ -141,10 +165,10 @@ div.menu-container:hover div.child-items-container {
     padding-left: 50px;
 }
 
-.break-word p {
-    line-height: normal;
-    letter-spacing: normal;
-}
+    .break-word p {
+        line-height: normal;
+        letter-spacing: normal;
+    }
 
 p {
     -webkit-margin-after: 0px;
@@ -156,13 +180,25 @@ p {
 }
 
 .buyit-image {
-    width: 142px;
-    height: 142px;
+    /*width: 142px;
+    height: 142px;*/
     object-fit: cover;
+    width: 100%;
 }
+
+/*html {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+}*/
 
 .buyit-font-title {
     font: normal normal normal 25px/1.3em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+    /*font-size: 1rem;*/
     color: #848079;
 }
 
@@ -231,13 +267,20 @@ p {
 
 .static-text-centered {
     position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 25%;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
     background-color: #45ba01;
-    height: 88px;
-    padding-top: 15px;
+    height: 70px;
+    /*padding-top: 15px;*/
+    width: 100%;
+    line-height: 88px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .static-text {
     font: normal normal normal 26px/1.2em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
 }
@@ -245,4 +288,62 @@ p {
 .green-font {
     font: normal normal normal 15px/1.3em enriqueta,serif;
     color: #45ba01;
+}
+
+@media (max-width: 767px) {
+    .awesome {
+        display: none;
+    }
+    .static-text {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 1200px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #45ba01 !important;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+}
+
+.navbar-collapse.collapse {
+    background-color: white;
 }
